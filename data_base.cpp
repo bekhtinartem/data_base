@@ -45,7 +45,6 @@ public:
 
 
     void load_data_students(string s){
-        try{
             ifstream test;
             test.open(s.c_str());
             string s1;
@@ -65,8 +64,6 @@ public:
                 }
                 fin.close();
             }
-        }catch(...){}
-
     }
     void set_data_students(string surname, string name, string patronymic, int age, string group){
         load( surname, name, patronymic, age, group);
@@ -189,7 +186,7 @@ public:
 };
 class Items{
 protected:
-    string colums[2]={"id", "name"};
+    string colums_second[2]={"id", "name"};
     vector<int> ids;
     vector<string> name;
     void load(string name){
