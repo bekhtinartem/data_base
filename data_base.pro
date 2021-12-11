@@ -4,7 +4,6 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.cpp \
-    data_base.cpp \
     test.cpp
 
 HEADERS +=
